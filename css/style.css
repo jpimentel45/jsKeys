@@ -1,9 +1,8 @@
 html {
   font-size: 10px;
-  background-position-x: 100;
   background: url(../images/bender.gif);
-  background-size: 75px;
-  margin-top: 0px;
+  background-size: cover;
+  height: 100%;
 }
 
 body, html {
@@ -11,14 +10,21 @@ body, html {
   padding: 0;
   font-family: sans-serif;
   flex-wrap: wrap;
-  margin-top: 7%;
+  /* margin-top: 7%; */
+}
+
+main {
+  margin: 50% auto 0;
+  text-align: center;
+}
+
+input {
+  padding: 20px 205px;
 }
 
 .keys {
   display: flex;
   flex: 1;
-  /* min-height: 100vh; */
-  align-items: center;
   justify-content: center;
 }
 
@@ -52,4 +58,13 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    margin: 26% auto 0;
+  }
+  input {
+    visibility: hidden;
+  }
 }
